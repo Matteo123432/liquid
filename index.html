@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liquid OS</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f8fafc;
+      color: #1f2937;
+    }
+
+    a {
+      color: #0ea5e9;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* Header */
+    .header {
+      background-color: #0f172a;
+      color: #fff;
+      padding: 1.5rem 0;
+    }
+
+    .header .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .nav {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .nav a {
+      color: #94a3b8;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #fff;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(to right, #0ea5e9, #38bdf8);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #1e3a8a;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #2563eb;
+    }
+
+    /* Features */
+    .features {
+      background-color: #fff;
+      padding: 4rem 2rem;
+    }
+
+    .features h3 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .feature-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .feature {
+      background-color: #f1f5f9;
+      padding: 2rem;
+      border-radius: 1rem;
+      text-align: center;
+      flex: 1 1 250px;
+      max-width: 300px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .feature h4 {
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+    }
+
+    /* Download */
+    .download {
+      background-color: #e0f2fe;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .download h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .download p {
+      margin-bottom: 2rem;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #0f172a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    .footer a {
+      color: #38bdf8;
+    }
+
+    @media (max-width: 768px) {
+      .feature-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Liquid OS</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#download">Try</a></li>
+          <li><a href="#community">Community</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Fluid. Fast. Free.</h2>
+      <p>A modern, lightweight OS built for speed and simplicity.</p>
+      <a href="#download" id="scratch" class="btn">Get Liquid OS</a>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <h3>Why Liquid OS?</h3>
+      <div class="feature-grid">
+        <div class="feature">
+          <h4>💧 Lightweight</h4>
+          <p>Minimal system requirements with a sleek interface.</p>
+        </div>
+        <div class="feature">
+          <h4>⚡ Fast Boot</h4>
+          <p>Instant startup and smooth multitasking experience.</p>
+        </div>
+        <div class="feature">
+          <h4>🛡️ Secure</h4>
+          <p>Privacy-focused with built-in security tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="download">
+    <div class="container">
+      <h3>Ready to Try It?</h3>
+      <p>Try Liquid OS and experience a better way to compute.</p>
+      <a href="#" id="scratch" class="btn">Try Now!</a>
+    </div>
+  </section>
+
+  <footer id="community" class="footer">
+    <div class="container">
+      <p>Join the community on <a id="scratch" href="#">Scratch</a>
+      <p>&copy; 2025 Liquid OS</p>
+    </div>
+  </footer>
+</body>
+</html>
+<script>
+  document.getElementById('scratch').onclick = function() {
+    window.location.href = 'https://scratch.mit.edu/studios/36721194';
+  };
+</script>
+
